@@ -1,6 +1,6 @@
 # HighestStock
 
-**TODO: Add description**
+An example app for the Elixir Meetup in Hyderabad
 
 ## Installation
 
