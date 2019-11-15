@@ -7,11 +7,11 @@ defmodule HighestStock do
   Gets the stock name with the highest value currently
   ## Examples
 
-      iex> HighestStock.()
-      :world
+      iex> HighestStock.find_for()
+      {name: "Some Company", price: 9999999}
 
   """
-  def get_highest_stock do
+  def find_for do
     stocks = ["FB", "GOOGL", "MSFT", "AMZN"]
 
     name =
