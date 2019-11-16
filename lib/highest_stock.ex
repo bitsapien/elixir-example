@@ -11,26 +11,22 @@ defmodule HighestStock do
       {name: "Some Company", price: 9999999}
 
   """
-  def find_for do
-    stocks = ["FB", "GOOGL", "MSFT", "AMZN"]
+  def find_for(stocks) do
+    # stocks = ["FB", "GOOGL", "MSFT", "AMZN"]
 
-    name =
-      List.first(
-        Enum.sort_by(
-          Enum.map(stocks, fn stock_code ->
-            {:ok, response} =
-              Jason.decode(
-                HTTPoison.get!(
-                  "http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}"
-                ).body
-              )
+    stocks
+    |> Enum.map(fn stock_code -> get_current_stock_details(stock_code) end)
+    |> Enum.sort_by(&Map.fetch(&1, :price))
+    |> List.last()
+  end
 
-            %{name: response["Name"], price: response["LastPrice"]}
-          end),
-          &Map.fetch(&1, :price)
-        )
-      )
+  def get_current_stock_details(stock_code) do
+    response =
+      HTTPoison.get!(
+        "http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}"
+      ).body
+      |> Jason.decode!()
 
-    name
+    %{name: response["Name"], price: response["LastPrice"]}
   end
 end
