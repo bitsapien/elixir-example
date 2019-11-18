@@ -1,0 +1,7 @@
+#+TITLE: show
+Stock Codes: ["FB", "GOOGL", "MSFT", "AMZN"]
+PROJECT URL : https://github.com/bitsapien/elixir-example
+STOCK API: http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}
+Deps:
+HTTPoison(for reading from the API): https://github.com/edgurgel/httpoison
+Jason(parsing the response from the API): https://github.com/michalmuskala/jason
