@@ -19,3 +19,17 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/highest_stock](https://hexdocs.pm/highest_stock).
 
+
+## Help
+
+**Example Stock Codes** "FB", "GOOGL", "MSFT", "AMZN"
+**PROJECT URL**         https://github.com/bitsapien/elixir-example
+**STOCK API**           http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}
+
+#### Suggested libraries:
+
+HTTPoison(for reading from the API): https://github.com/edgurgel/httpoison
+Jason(parsing the response from the API): https://github.com/michalmuskala/jason
+
+Keep yourself updated on this Telegram group -
+Telegram link: https://t.me/elixirindia
