@@ -23,8 +23,10 @@ be found at [https://hexdocs.pm/highest_stock](https://hexdocs.pm/highest_stock)
 ## Help
 
 **Example Stock Codes** "FB", "GOOGL", "MSFT", "AMZN"
-**PROJECT URL**         https://github.com/bitsapien/elixir-example
-**STOCK API**           http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}
+
+**Project URL**         https://github.com/bitsapien/elixir-example
+
+**Stock API**           http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{stock_code}
 
 #### Suggested libraries:
 
