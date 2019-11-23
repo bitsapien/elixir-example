@@ -2,6 +2,8 @@
 
 An example app for the Elixir Meetup in Hyderabad
 
+Problem Statement: Fetch stock prices from the API and return the stock with the highest price with the name of the stock.
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
