@@ -33,6 +33,7 @@ be found at [https://hexdocs.pm/highest_stock](https://hexdocs.pm/highest_stock)
 #### Suggested libraries:
 
 HTTPoison(for reading from the API): https://github.com/edgurgel/httpoison
+
 Jason(parsing the response from the API): https://github.com/michalmuskala/jason
 
 Keep yourself updated on this Telegram group -
